@@ -1,0 +1,430 @@
+.grid-yosegaki{
+    display: grid;
+    width: 96vw;
+    margin: 0 auto 10vw;
+    gap: 2vw;
+    grid-template-columns: 47vw 47vw;
+    grid-template-rows: repeat(16,47vw);
+}
+
+.grid-album{
+    display: grid;
+    width: 96vw;
+    margin: 0 auto 10vw;
+    gap: 2vw;
+    grid-template-columns: 47vw 47vw;
+    grid-template-rows: repeat(34,47vw);
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.grid-big-top {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.one-big1 p{
+    font-size: 11px;
+}
+
+
+.miyata{
+    font-size: 6px;
+}
+
+.grid-big-bottom {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+.grid-big-big-bottom {
+    grid-column: 1/3;
+    grid-row: 9/10;
+}
+
+.grid-big-big-big-bottom {
+    grid-column: 1/3;
+    grid-row: 15/16;
+}
+
+.grid-big-big-big-big-bottom {
+    grid-column: 1/3;
+    grid-row: 20/21;
+}
+
+.grid-end{
+    grid-column: 1/3;
+    grid-row: 32/33;
+}
+
+.grid-big-end{
+    grid-column: 1/3;
+    grid-row: 33/35;
+}
+
+.one-big1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: relative;
+    top: -0.7rem;
+    border-radius: 0%;
+    border: double thick skyblue;
+    background-color: aliceblue;
+    text-align: center;
+    color: black;
+}
+
+.one-big2{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    border: double thick rgb(82, 51, 51);
+    background-color: burlywood;
+}
+
+.one-big3{
+    grid-column: 1/3;
+    grid-row: 7/8;
+}
+
+.one-big4{
+    grid-column: 1/3;
+    grid-row: 9/10;
+    border: double thick rgb(82, 51, 51);
+    background-color: burlywood;
+}
+
+.one-big5{
+    grid-column: 1/3;
+    grid-row: 11/12;
+}
+
+.one-big6{
+    grid-column: 1/3;
+    grid-row: 13/15;
+    border: double thick rgb(82, 51, 51);
+    background-color: burlywood;
+}
+
+.one-big7{
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+
+.note {
+    background-image: linear-gradient(90deg, transparent 0%, transparent 50%, aliceblue 50%, aliceblue 100%), /* 点線1の色 */
+                      linear-gradient(180deg, #ccc 1px, transparent 1px); /* 点線2の色と太さ */
+    background-size: 8px 100%, /* 点線1のサイズ */
+                     100% 1em; /* 点線2のサイズ */
+    line-height: 1em; /* 文字の高さ */
+    padding-bottom: 1px; /* 最終行の下にも罫線を引く */
+}
+
+.note2 {
+    background-image: linear-gradient(90deg, transparent 0%, transparent 50%, burlywood 50%, burlywood 100%), /* 点線1の色 */
+                      linear-gradient(180deg, white 1px, transparent 1px); /* 点線2の色と太さ */
+    background-size: 8px 100%, /* 点線1のサイズ */
+                     100% 1em; /* 点線2のサイズ */
+    line-height: 1em; /* 文字の高さ */
+    padding-bottom: 1px; /* 最終行の下にも罫線を引く */
+}
+
+.one-big1::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -20px;
+    left: 50px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-big2::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -20px;
+    left: 100px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-big3::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -20px;
+    left: 70px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-big4::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -20px;
+    left: 10px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-big5::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -20px;
+    left: 50px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-big6::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -20px;
+    left: 100px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-big7::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -20px;
+    left: 70px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-big8::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -20px;
+    left: 10px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-big9::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -20px;
+    left: 10px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-big11::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -10px;
+    left: 10px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-big12::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -30px;
+    left: 200px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-big13::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, rgba(254, 248, 208, 0.827) 0%, rgba(254, 248, 208, 0.827) 50%, pink 50%, pink 100%);
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+    top: -20px;
+    left: 100px;
+    background-size: 20px 20px;
+    width:100px;
+    height:30px;
+}
+
+.one-wrapper-big{
+    padding: 0.7rem 1.2rem 0 1.2rem;
+}
+
+
+@media screen and (min-width:500px) {
+
+    .contents{
+        background-color: bisque;
+        background-image: url(dots.svg) ,url(ピロティ.jpeg);
+        background-blend-mode: luminosity;
+    }
+
+    .title{
+        font-family: impact, sans-serif;
+        font-size: 80px;
+        font-size: 85px;
+      }
+
+    .grid-yosegaki{
+        display: grid;
+        width: 96vw;
+        margin: 0 auto 10vw;
+        gap: 2vw;
+        grid-template-columns: repeat(6,calc(86vw/6));
+        grid-template-rows: repeat(9,calc(86vw/6));
+    }
+
+    .one-big1{
+        grid-column: 3/5;
+        grid-row: 7/8;
+        position: relative;
+        top: -0.7rem;
+        border-radius: 0%;
+        border: double thick skyblue;
+        background-color: aliceblue;
+        text-align: center;
+        color: black;
+    }
+    
+    .one-big2{
+        grid-column: 4/6;
+        grid-row: 3/4;
+        border: double thick rgb(82, 51, 51);
+        background-color: burlywood;
+    }
+    
+    .one-big3{
+        grid-column: 2/4;
+        grid-row: 5/6;
+    }
+    
+    .one-big4{
+        grid-column: 4/6;
+        grid-row: 5/6;
+        border: double thick rgb(82, 51, 51);
+        background-color: burlywood;
+    }
+    
+    .one-big5{
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+    
+    .one-big6{
+        grid-column: 5/7;
+        grid-row: 6/7;
+        border: double thick rgb(82, 51, 51);
+        background-color: burlywood;
+    }
+    
+    .one-big7{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    .one-big8{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        border: double thick rgb(82, 51, 51);
+        background-color: burlywood;
+    }
+    
+    .one-big9{
+        grid-column: 5/7;
+        grid-row: 2/3;
+    }
+    
+    .one-big10{
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .one-big11{
+        grid-column: 1/3;
+        grid-row: 9/11;
+        border: double thick rgb(82, 51, 51);
+    background-color: burlywood;
+    }
+
+    .one-big12{
+        grid-column: 3/5;
+        grid-row: 9/11;
+    }
+
+    .one-big13{
+        grid-column: 5/7;
+        grid-row: 9/11;
+        border: double thick rgb(82, 51, 51);
+    background-color: burlywood;
+    }
+
+    .grid-album{
+        display: grid;
+        width: 96vw;
+        margin: 0 auto 10vw;
+        gap: 2vw;
+        grid-template-columns: repeat(6,calc(86vw/6));
+        grid-template-rows: repeat(4,calc(86vw/6));
+    }
+
+    .grid-big-top {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .grid-big-bottom {
+        grid-column: 5/7;
+        grid-row: 3/4;
+    }
+    
+    .grid-big-big-bottom {
+        grid-column: 1/3;
+        grid-row: 4/6;
+    }
+    
+    .grid-big-big-big-bottom {
+        grid-column: 3/7;
+        grid-row: 4/6;
+    }
+}
